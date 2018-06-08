@@ -1,0 +1,211 @@
+.topP{
+	border-top: dashed 1px #666;
+	border-bottom: dashed 1px #666;
+	padding: 8px 10%;
+}
+.topP a{
+	color: #757575;
+}
+.cont{
+	margin: 20px 10%;
+	background: #fff;
+	height: auto;
+}
+.imgX{
+	background: url(../img/imgx.jpg) no-repeat;
+	width: 100%;
+	min-height: 270px;
+}
+.imgXs{
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 270px;
+	background: rgba(255,255,255,0.5);
+	overflow: hidden;
+	border: 1px #ccc solid;
+	box-sizing: border-box;
+}
+.bigPic{
+	visibility: hidden;
+	position: absolute;
+	left: 123%;
+	transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	border: 1px #757575 solid;
+	z-index: 2;
+}
+.imgX:hover .imgXs{
+	visibility: visible;
+}
+.imgX:hover .bigPic{
+	visibility: visible;
+}
+.textP{
+	border-top:#ccc 1px dashed ;
+	border-bottom:#ccc 1px dashed ;
+	padding:5px 0;
+	font-size: 12px;
+	color: #757575;
+	margin-top:15px ;
+}
+.blockA{
+	color: #fff;
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 0;
+	width: 150px;
+}
+.blockA:hover{
+	color: #fff;
+	background: #3A3939;
+}
+.minu{
+	width: 32px;
+	height: 34px;
+	border: 1px #ccc solid;
+	background: transparent;
+	text-align: center;
+	outline: none;
+}
+.buttons{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left:10px ;
+}
+.buttons input[type=button]:hover{
+	color: #fff;
+	background: #000;
+}
+.d1{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.d1~p{
+	padding-left: 10px;
+}
+.d2{
+	height: 34px;
+	line-height: 34px;
+	background: #f4f4f4;
+}
+.asideImg{
+	text-align: center;
+}
+.asideImg p{
+	font-size: 12px;
+	color: #555;
+}
+.asideImg small{
+	color: #999;
+}
+.asideImg:hover{
+	text-decoration: underline;
+}
+.ping{
+	border-top: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.ping span{
+	display: inline-block;
+	border-top: 3px #000 solid;
+	padding:10px 10px;
+	height: 45px;
+}
+.lun{
+	font-size: 12px;
+	color: #757575;
+	border-bottom:1px #ccc solid;
+	padding-bottom: 10px;
+}
+.p5{
+	font-size: 14px;
+	font-weight: bold;
+	color: #555555;
+}
+.shop{
+	z-index: 999;
+	width: 330px;
+	background-color:#fff ;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.3s; 
+	transform: translateX(330px);
+	-webkit-transform: translateX(330px);
+}
+.shop1{
+	z-index: 999;
+	width: 330px;
+	background-color:#fff ;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition: all 0.3s; 
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+}
+.bian{
+	transform: translateX(330px);
+	-webkit-transform: translateX(330px);
+	transition: all 0.3s; 
+}
+.bian1{
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	transition: all 0.3s; 
+}
+.shop .car{
+	height: 60px;
+	width: 100%;
+	background-color: #000000;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 2em;
+}
+.shop-s{
+	padding: 30px;
+	transition: all 0.3s;
+	opacity: 0;
+}
+.shop-s span{
+	font-size: 12px;
+}
+.jiesuan{
+	width: 300px;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	margin: 0 15px;
+}
+.jiesuan button{
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 0;
+}
+.chakan{
+	color: #757575;
+	border: 1px #000 solid;
+	background-color: #fff;
+}
+.jie{
+	background-color: rgb(73,73,73);
+	font-weight: bold;
+	color: #fff;
+	border: 1px rgb(73,73,73) solid;
+}
+.jie:hover{
+	background-color: #000000;
+	color: #fff;
+}

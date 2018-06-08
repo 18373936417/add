@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<!--第一步：设置视口  -->              	
+			<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0,maximum-scale=1.0"/>	
+		<!--第二步：声明文档兼容模式  ，表示使用IE浏览器的最新渲染模式-->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--第三步：引入Bootstrap样式  --> 
+			<link href="lib/bootstrap/css/bootstrap.min.css""  rel="stylesheet"/>
+			<link href="css/font-awesome.min.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="lib/html5shiv/html5shiv.min.js"></script>
+		<script src="lib/respond/respond.min.js"></script>
+		<!end if-->
+		<title>花语商品列表</title>
+		<style>
+			.navbar-default{ background-color:transparent;border: 0;}
+			.nu{width: 60%; margin: 0 auto;}
+			.nu a{color:#000}
+			.myNav{ width: 100%; height: 60px; background-color:#e0e0e0 ;line-height: 40px;padding-right: 0px;padding-left: 0px; color: #7e7e7e; font-size: 12px;}
+			.pull-left{vertical-align: middle; margin-left: 200px;}
+			.pull-right{ margin-right: 200px;}
+			.pull-right a{ text-decoration: none; margin-left: 20px; font-size: 18px; color: #7e7e7e;}
+			.navCenter{ height: 100px; margin-top: 15px; text-align: center;}
+			.list h3, h4{ font-size:14px}
+			.imgg{ transition:all 0.2s}
+			.pro{transition:all 0.2s}
+			.pro:hover .imgg{magin-top:0px; box-shadow:10px #ccc;}
+			.pro:hover{ box-shadow:5px #ccc}
+			.list p{ color:#ccc;}
+			.footer{ width: 100%; margin-top: 20px; color:#ccc}
+			.container-footer{margin: 0 auto; font-size: 12px;}
+			.Online img{ width:40px; height: 30px;}
+			.img{background: url(img/social_icon_24x24.png) no-repeat;background-position: -48px -72px;height: 24px; width: 24px; display: inline-block;}  
+			.social ul{margin-left:-54px}
+			.social li{ display:inline-block}
+			.li1{background: url(img/social_icon_24x24.png) no-repeat; background-position: -24px 0px; width:24px; height:24px;display: inline-block;}
+			.li2{background: url(img/social_icon_24x24.png) no-repeat; background-position: 0px 0px; width:24px; height:24px;display: inline-block;}
+			.li3{background: url(img/social_icon_24x24.png) no-repeat; background-position:-120px 0px; width:24px; height:24px;display: inline-block;}
+			.li4{background: url(img/social_icon_24x24.png) no-repeat; background-position:-192px 0px; width:24px; height:24px;display: inline-block;}
+			.li5{background: url(img/social_icon_24x24.png) no-repeat; background-position:-96px 0px; width:24px; height:24px;display: inline-block;}
+			.pro1:hover .imgg1{ margin-top:-5px; box-shadow:5px #ccc}
+			.pro2:hover .imgg2{ margin-top:-5px; box-shadow:5px #ccc}
+			.container-footer h4{color:#000}
+			.p2 img{width:40px; height:30px}
+			.row .foot2{margin-top:60px}
+			.footer-bottom{text-align:center; margin-top:30px}
+			
+			
+		</style>
+	</head>
+	<body style="background-image: url(img/bg.jpg);">
+		<!--
+        	导航条开始
+        -->
+		<div class="myNav hidden-sm hidden-xs"> 
+			<div class="navbartop">
+				<div class="pull-left ">
+					<span class="glyphicon glyphicon-time"></span>
+					在线时间08：30~21：30
+					 欢迎访问花语在线商城！
+				</div>
+				<div class="pull-right biao">
+					<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+					<a href="login（胡文奇）.html"><span class="glyphicon glyphicon-user"></span></a>
+					<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+				</div>
+			</div>
+			</div>
+			<div class="navCenter">
+				<img src="img/logo.png"/>
+				</div>
+				<nav class="navbar navbar-default daohang">
+					<div class="navbar-header">
+					<span id="nh"></span>
+				<button class="navbar-toggle " data-toggle = "collapse" data-target="#menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+				</button>
+				</div>
+				<div class="collapse navbar-collapse " id="menu">
+					<ul class="nav nav-justified nu ">
+						<li><a href="home（李鹏玉）.html">HOME</a></li>
+						<li><a href="product（胡文奇）.html">PRODUCTS</a></li>
+						<li><a href="About（余泽）.html">ABOUT</a></li>
+						<li><a href="contact（胡文奇）.html">CONTACT</a></li>
+						<li><a href="fuwu（李鹏玉）.html" target="_self" >SUIVICES</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--导航条结束-->
+		<div class="container">
+		<div class="row">
+		<div class="col-md-8">
+		<div class="carousel slide" id="myCarousel" style="background: palegreen;" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+				<li data-target="#myCarousel"  data-slide-to="1"></li>
+				<li data-target="#myCarousel"  data-slide-to="0"></li>
+			</ol>
+			<div class="carousel-inner slider-text" >
+				<div class="item active">
+						<img src="img/blog-1.jpg">
+						<div class="carousel-caption">
+							<h4>All the goods</h4>
+							<p>Whether you are a regular Internet user or a professional website maker, you can use the launch page to design the most professional website.Take off page provides a lot of beautiful website, </p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="img/blog-2.jpg"">
+						<div class="carousel-caption">
+							<h4>All the goods</h4>
+							<p>Whether you are a regular Internet user or a professional website maker, you can use the launch page to design the most professional website.Take off page provides a lot of beautiful website, </p>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+		</div>
+				<div class="col-md-4 col-sm-12" style="margin-top: 10px;">
+					<a href="#"  class="featured text-center">
+						<img src="img/blog-2.jpg" style="width:100%; height: 260px;"/>
+						<div class="decs" style="position: absolute;top: 90px;left: 50px">
+							<span class="date">Dec25,2017</span>
+							<h3>Every day is a new beginning</h3>
+							<span class="category">So precious</span>
+						</div>
+					</a>
+					<a href="#"  class="featured text-center">
+						<img src="img/blog-1.jpg" style="width: 100%; height: 260px; margin-top: 10px;"/>
+						<div class="decs" style="position: absolute;top: 360px;left: 50px">
+							<span class="date">Dec25,2017</span>
+							<h3>Every day is a new beginning</h3>
+							<span class="category">So precious</span>
+						</div>
+					</a>
+					
+				</div>
+		</div>
+		<div class="list" style="text-align: center; margin-top: 40px;">
+			<h4>All goods</h4>
+			<p>
+
+Whether you are a regular Internet user or a professional website maker, you can use the launch page to design the most professional website.Take off page provides a lot of beautiful website, website templates and finished products almost cover built in various industries, today you just small changes on the template to complete their own websites, all this is free of charge.
+</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="products-list1">
+			<div class="col-md-3 col-sm-3 col-xs-6 pro1">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/001.jpg" class="imgg1" ></a>
+					<div class="caption">
+					<h3>植物花卉001</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 pro1">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/002.jpg" class="imgg1"></a>
+					<div class="caption">
+					<h3>植物花卉002</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+				</div>
+				<div class="clearfix  hidden-lg hidden-md"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 pro1">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/003.jpg" class="imgg1" ></a>
+					<div class="caption">
+					<h3>植物花卉003</h3>
+					<p>￥5900</p>
+					
+					</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 pro1">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/004.jpg"  class="imgg1"></a>
+					<div class="caption"> 
+					<h3>植物花卉004</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+					
+					</div>
+					<div class="clearfix"></div>
+					
+					<div class="products-list2">
+					 <div class="col-md-3 col-sm-3 col-xs-6 pro2">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/005.jpg" class="imgg2" ></a>
+					<div class="caption">
+					<h3>植物花卉005</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 pro2">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/006.jpg" class="imgg2" ></a>
+					<div class="caption">
+					<h3>植物花卉006</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+					</div>
+						<div class="clearfix  hidden-lg hidden-md"></div>
+					<div class="col-md-3 col-sm-3 col-xs-6 pro2">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/007.jpg" class="imgg2" ></a>
+					<div class="caption">
+					<h3>植物花卉007</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6 pro2">
+					<div class="thumbnail">
+					<a href="#" ><img src="img/008.jpg"  class="imgg2"></a>
+					<div class="caption">
+					<h3>植物花卉008</h3>
+					<p>￥5900</p>
+					</div>
+					</div>
+					</div>
+						<div class="clearfix min"></div>
+		</div>
+	</div>
+	
+</div>
+  <footer class="footer" style="margin-top: 40px;">
+        	<div class="container-footer hidden-xs hidden-sm">
+        		<div class="row foot1" >
+        		<div class="col-md-3 about change" style="position: relative; width: 24%; float: left;margin-left:10px; ">
+        			<h4>About Change</h4>
+        			<span style="height: 100px;">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</span>
+        		</div>
+        		<div class=" col-md-3 about change" style="position: relative; width: 24%; float: left;margin-left:10px ; ">
+        			<h4>Service</h4>
+        			<span>消費者保障服务<br/>
+        				七天无理由退款<br/>
+        				假一赔三<br/>
+        			</span>
+        		</div>
+        		
+        		<div class="col-md-3 About Color" >
+        			<h4>About Color</h4>
+        			<span style="height: 100px;">本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换</span>
+        		</div>
+        		<div class="col-md-3" style="position: relative; width: 24%; float: left; ;">
+        			<img src="img/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1j_003.png"/>
+        		</div></div>
+        		<div class="row foot2" style="margin-top: 30px;">
+        		<div class="col-md-3 p2 " style="position: relative; width: 24%; float: left; margin-left:10px ;">
+        			<h4>Online Payment</h4>
+        			<img src="img/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1j_005.png" />
+        			<img src="img/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1j_004.png"/>
+        			<img src="img/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1j_002.png"/>
+        		</div>
+        		<div class="col-md-3" style="position: relative; width: 24%; float: left;margin-left:10px ;">
+        			<h4>Online Payment</h4>
+        			<span style="height: 100px;">非质量问题谢绝退换，如有质量问题，本店承担运费调换</span>
+        		</div>
+        		
+        		
+				<div class="col-md-3" style="position: relative; width: 24%; float: left;margin-left:10px ;">
+        			<h4>Wechat</h4>
+        			<span style="height: 100px;">非质量问题谢绝退换，如有质量问题，本店承担运费调换</span>
+</div>
+				<div class="col-md-3 social" style="position: relative; width: 24%; float: left; ">
+        			<h4>Social App</h4>
+        			
+        				<ul>
+        				<li ><span class="li1"></span></li>
+        				<li><span class="li2"></span></li>
+        				<li><span class="li3"></span></li>
+        				<li><span class="li4"></span></li>
+        				<li><span class="li5"></span></li>
+        				</ul>
+        			
+        			</div>
+        		</div>
+        		<div class="row foot3" style="margin-top: 30px;">
+        			<div class="col-md-3">
+        				<h4>关于产品</h4>
+						<span>
+							about color
+						所有商品均为实物拍摄，各浏览器显示有所不同，对此要求高的买家慎拍
+						</span>
+        			</div>
+        			<div class="col-md-3">
+        				<h4>关于退货</h4>
+						<span>
+							about color
+						本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换
+						</span>
+        			</div>
+        			<div class="col-md-3">
+        				<h4>关于产品</h4>
+						<span>
+							about color
+						本店商品均为易碎品，非质量问题谢绝退换，如有质量问题，本店承担运费调换
+						</span>
+        			</div>
+        			<div class="col-md-3">
+        				<h4>扫码关注</h4>
+						<span>
+						<img src="img/aHR0cDovLzU5ZGFkYmJhYWM0MzYudDc0LnFpZmVpeWUuY29tL3FmeS1j_003.jpg"/>
+						</span>
+        			</div>
+        						
+        		</div>
+        	</div>
+        	<div class="footer-bottom">
+        		<p>Copyright © 2010-2015花语文化传播有限公司 All rights reserved</p>
+        	</div>
+        </footer>
+	
+				<!-- 第四步：引入jquery库 -->
+      		<script  src="lib/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
+      	<!-- 第五步：引入bootstrap插件-->
+      	<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	</body>
+</html>

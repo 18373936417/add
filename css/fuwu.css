@@ -1,0 +1,114 @@
+ul,li{
+	list-style: none;
+}
+.jianxi{
+	margin: 0 10%;
+}
+.jianxi .row{
+	margin: 0;
+}
+.topBan{
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 30px;
+}
+.topImg{
+	width: 100%;
+	max-height: 350px;
+}
+.topsImg{
+	margin-top: -10%;
+	box-shadow: 0 0 10px 2px #999;
+}
+.zhifu{
+	color: #9b6c3e;
+	font-size: 12px;
+	text-transform:uppercase;
+}
+.topBan p{
+	font-size: 12px;
+	color: #999;
+}
+.topBan span{
+	font-size: 30px;
+	color: #9b6c3e;
+	transition: all 0.5s;
+}
+.topBan span:hover{
+	transform: rotatez(360deg);
+	-webkit-transform: rotatez(360deg);
+}
+.cenImg{
+	background: url(../img/11.png) no-repeat;
+	width: 100%;
+	min-height: 500px;
+	background-attachment:fixed ;
+	background-size: cover;
+	background-position-x: 50%;
+	z-index: -1;
+	margin-top: -15px;
+}
+.cenCont{
+	width: 80%;
+	background: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.conT{
+	padding: 9% 9% 0;
+}
+.conI{
+	padding: 1%;
+}
+.conbtn{
+	background: #000;
+	color: #fff;
+	border-radius: 0px;
+	width: 105px;
+	margin:20px ;
+}
+.botCont{
+	margin-top: 144px;
+	width: 100%;
+	background-color:#fff ;
+	overflow: hidden;
+}
+.botH4{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top:10%;
+}
+.botH4 small{
+	color: #999;
+}
+.botImg{
+	height: 370px;
+	position: relative;
+}
+.botImg .itme{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.myImg{
+	transition: all 0.3s; 
+}
+.botImg .sm{
+	position: absolute;
+	top: 76%;
+	left: 0;
+}
+.sm li{
+	display: inline-block;
+	cursor: pointer;
+}
+.sm .glyphicon{
+	color: #ccc;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+.sm .glyphicon:hover{
+	color: #999;
+}
